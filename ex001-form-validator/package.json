@@ -1,0 +1,37 @@
+{
+  "name": "cursots_exercices",
+  "version": "1.0.0",
+  "description": "Repositorio destinado ao estudo de TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jezreel-Moraes/cursots_exercices.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jezreel-Moraes/cursots_exercices/issues"
+  },
+  "homepage": "https://github.com/Jezreel-Moraes/cursots_exercices#readme",
+  "devDependencies": {
+    "@types/validator": "^13.7.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "validator": "^13.7.0"
+  }
+}
