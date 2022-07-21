@@ -16,8 +16,10 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const validator_1 = __importDefault(__webpack_require__(/*! validator */ "./node_modules/validator/index.js"));
 const SHOW_ERROR_MESSAGE = 'show-error-message';
 class FormControl {
+    form;
     constructor(formClassName) {
         this.form = document.querySelector(formClassName);
+        this.init();
     }
     init() {
         this.form.addEventListener('submit', (e) => {
@@ -113,8 +115,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const form_control_1 = __importDefault(__webpack_require__(/*! ./form-control */ "./src/form-control.ts"));
-const formControl = new form_control_1.default('.form');
-formControl.init();
+new form_control_1.default('.form');
 
 
 /***/ }),

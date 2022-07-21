@@ -3,10 +3,18 @@ import validator from 'validator';
 const SHOW_ERROR_MESSAGE = 'show-error-message';
 
 export default class FormControl {
-  readonly form: HTMLFormElement;
+  private readonly form!: HTMLFormElement;
 
   constructor(formClassName: string) {
-    this.form = document.querySelector(formClassName) as HTMLFormElement;
+    try {
+      this.form = document.querySelector(formClassName) as HTMLFormElement;
+    } catch (error) {
+      console.log('form error');
+      return;
+    }
+
+    if (!this.form) return;
+    this.init();
   }
 
   public init(): void {
